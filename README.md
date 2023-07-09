@@ -1,5 +1,6 @@
 # Soraya
-Soraya is a package that generates 322 features for any material.
+Soraya is a package for selecting the most important features that has been developed using an innovative hybrid method. Soraya identifies and selects the most relevant features for regression and classification tasks.
 
 
-We designed and developed the Python package named "Soraya" to generate atomic features. It can generate 322 atomic features for any type of material, such as Electron Affinity, Electric Polarizability, Thermal Conductivity, Pettifor number, etc. Soraya calculates statistical relationships for each physical and chemical feature based on Element, Subscript, and Fraction. This package requires the installation of five more packages, pandas, numpy, pymatgen, mendeleev, and chemparse. 
+Installation:
+To use the Soraya package, the Shap package must be installed with "pip install shap". In general, the following libraries and packages are utilized by Soraya:sklearn, pandas, numpy, tqdm, xgboost and shap.
