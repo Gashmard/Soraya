@@ -55,7 +55,7 @@ def rename_target_column(input_file):
 
     # Rename the target column to "Target"
     input_file.rename(columns={Target_column: "Target"}, inplace=True)
-    print("The column of ",Target_column," was considered the \"Target\" of the problem.", '\n')
+    print(f" The column of \033[1m\033[97m\033[7m{Target_column}\033[0m was considered the \"Target\" of the problem.", '\n')
 
     Target = input_file["Target"]
     df_features = input_file.drop(["Target"], axis=1)
@@ -703,7 +703,7 @@ def save_dataframe():
     Final_Features_Selection.to_csv(output_file_path + "/" + output_file_name, index=False)
     print("The output dataframe containing the top",Total_final_features_that_user_wants_to_remain, "important features was successfully saved.")
   
-def main():
+def Main():
 
     input_file = input("Please enter the file path as in the example: home/Test/example.csv or example.xlsx or example.json... .Then press the Enter button. ")
     read_input_file(input_file)
@@ -713,5 +713,4 @@ def main():
     save_dataframe()
 
 if __name__ == "__main__":
-    main()
-
+    Main()
